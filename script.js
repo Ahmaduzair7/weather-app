@@ -27,7 +27,8 @@ const weather = function(lat,lon,city){
     const  description = json.weather[0].description
     const  temp = json.main.temp
     const  humidity = json.main.humidity
-    const  speed  = json.wind
+    const  speed  = json.wind.speed
+    
 
     document.querySelector('.city').innerText = 'Weather in ' + name;
     document.querySelector('.icon').src = 'https://openweathermap.org/img/wn/' + icon + '.png';
